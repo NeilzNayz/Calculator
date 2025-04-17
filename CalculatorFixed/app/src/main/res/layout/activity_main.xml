@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_calculation"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="100dp"
+        android:textAlignment="textEnd"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="4dp"
+        android:shrinkColumns="none"
+        android:stretchColumns="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_calculation">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_allClear"
+                style="@style/CircleButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="6dp"
+                android:text="AC"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_openingBracket"
+                style="@style/CircleButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="6dp"
+                android:text="("
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/btn_closingBracket"
+                style="@style/CircleButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="6dp"
+                android:text=")"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/btn_clear"
+                style="@style/CircleButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="6dp"
+                android:text="C"
+                android:textSize="34sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_7"
+                style="@style/CircleButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="6dp"
+                android:text="7"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/btn_8"
+                style="@style/CircleButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="6dp"
+                android:text="8"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/btn_9"
+                style="@style/CircleButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="6dp"
+                android:text="9"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/btn_divide"
+                style="@style/CircleButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="6dp"
+                android:text="/"
+                android:textSize="34sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_4"
+                style="@style/CircleButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="6dp"
+                android:text="4"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/btn_5"
+                style="@style/CircleButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="6dp"
+                android:text="5"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/btn_6"
+                style="@style/CircleButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="6dp"
+                android:text="6"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/btn_multiply"
+                style="@style/CircleButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="6dp"
+                android:text="*"
+                android:textSize="34sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_1"
+                style="@style/CircleButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="6dp"
+                android:text="1"
+                android:textAlignment="center"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/btn_2"
+                style="@style/CircleButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="6dp"
+                android:text="2"
+                android:textAlignment="center"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/btn_3"
+                style="@style/CircleButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="6dp"
+                android:text="3"
+                android:textAlignment="center"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/btn_plus"
+                style="@style/CircleButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="6dp"
+                android:text="+"
+                android:textAlignment="center"
+                android:textSize="34sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_0"
+                style="@style/CircleButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="6dp"
+                android:height="78dp"
+                android:text="0"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/btn_point"
+                style="@style/CircleButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="6dp"
+                android:height="78dp"
+                android:text="."
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/btn_equals"
+                style="@style/CircleButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="6dp"
+                android:height="78dp"
+                android:text="="
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/btn_minus"
+                style="@style/CircleButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="6dp"
+                android:height="78dp"
+                android:text="-"
+                android:textSize="34sp" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
